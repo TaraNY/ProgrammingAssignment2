@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix creates a list object of four functions.
+## The list object can be assigned to a unique input in the 
+## cacheSolve function. The cacheSolve function calculates the 
+## inverse matrix. It also checks to see if the input has already
+## been assigned a list object.
 
-## Write a short comment describing this function
+## This function stores a matrix as a list object.
 
 makeCacheMatrix <- function(x = matrix()) {
 	im<- NULL
@@ -17,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates the inverse and checks if the 
+## input has already been assigned a list object. If so, 
+## then it will return the values in the cache and not re-
+## calculate its inverse.
 
 cacheSolve <- function(x, ...) {
         im <-x$getmatrix()
@@ -31,5 +37,5 @@ cacheSolve <- function(x, ...) {
 	im
 
 }
-## Return a matrix that is the ainverse of 'x'
+
 
